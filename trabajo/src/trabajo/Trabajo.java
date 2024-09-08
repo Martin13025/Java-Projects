@@ -13,7 +13,5 @@ class Trabajo {
 		} else {
 			JOptionPane.showMessageDialog(null, "se trabaja");
 		}
-
 	}
-
 }
