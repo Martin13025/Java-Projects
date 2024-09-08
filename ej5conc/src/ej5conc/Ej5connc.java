@@ -34,5 +34,4 @@ class Ej5connc {
 		}
 		JOptionPane.showMessageDialog(null, "respuestas correctas: " + cant);
 	}
-
 }
