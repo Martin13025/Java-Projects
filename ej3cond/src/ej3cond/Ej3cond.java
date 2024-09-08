@@ -15,7 +15,5 @@ class Ej3cond {
 			t= 15.80 + exc * 1.50;
 			JOptionPane.showMessageDialog(null, "paga:" + t + "$");
 		}
-
 	}
-
 }
