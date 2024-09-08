@@ -8,13 +8,10 @@ class Juegomoneda {
 		int m;
 		
 		m=Integer.parseInt(JOptionPane.showInputDialog("aprobado"));
-		
 		if (m==0) {
 			JOptionPane.showMessageDialog(null, "tienen parcialito");
 		} else {
 			JOptionPane.showMessageDialog(null, "la profe trae caramelos");
 		}
-
 	}
-
 }
