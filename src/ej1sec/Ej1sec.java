@@ -13,9 +13,9 @@ class Ej1sec {
 		b=Integer.parseInt(JOptionPane.showInputDialog("ingrese numero"));
 		c=Integer.parseInt(JOptionPane.showInputDialog("ingrese numero"));
 		d=Integer.parseInt(JOptionPane.showInputDialog("ingrese numero"));
+		
 		sum=a+b;
 		prod=c*d;
 		JOptionPane.showMessageDialog(null,  "suma: " + sum + " producto: " + prod);
 	}
-
 }
