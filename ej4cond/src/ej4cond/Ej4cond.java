@@ -17,7 +17,5 @@ class Ej4cond {
 		}
 		vta=vta-d;
 		JOptionPane.showMessageDialog(null, "descuento: " + d + " paga: " + vta);
-
 	}
-
 }
