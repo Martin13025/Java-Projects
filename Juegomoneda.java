@@ -20,5 +20,11 @@ class Juegomoneda {
 			JOptionPane.showMessageDialog(null, "el tp tiene nota de concepto", "juego con moneda", JOptionPane.DEFAULT_OPTION,
 			new ImageIcon(Juegomoneda.class.getResource("/img/ceca.png")));
 		}
+		int apuesta;
+		String ap;
+		ap=(String) JoptionPane.showInputDialog(null, "ingrese apuesta", "apuesta", JOptionPane.DEFAULT_OPTION,
+			new ImageIcon(Juegomoneda.class.getResource("/img/monedaani.gif")), null, null);
+		apuesta=Integer.parseInt(ap);
+		JOptionPane.showMessageDialog(null, "su puesta es " + apuesta);
 	}
 }
