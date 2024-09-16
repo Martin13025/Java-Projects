@@ -26,5 +26,4 @@ class Ej1anidado {
 			}
 			JOptionPane.showMessageDialog(null, "cobra: " + s);
 	}
-
 }
