@@ -16,7 +16,5 @@ class Idioma {
 				JOptionPane.showMessageDialog(null, "bonjour");
 			}
 		}
-
 	}
-
 }
