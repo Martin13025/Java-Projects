@@ -128,5 +128,4 @@ class juegopreguntasrespuestas {
 		//-----------------------------------------------------------//
 		JOptionPane.showMessageDialog(null, "Respuestas Correctas: " + cant);
 	}
-
 }
