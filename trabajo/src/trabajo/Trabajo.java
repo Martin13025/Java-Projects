@@ -3,7 +3,6 @@ package trabajo;
 import javax.swing.JOptionPane;
 
 class Trabajo {
-
 	public static void main(String[] args) {
 		String dia;
 		
