@@ -11,9 +11,7 @@ class Ej3extra {
 		radio=Double.parseDouble(JOptionPane.showInputDialog("Ingrese radio"));
 		perim=2*p*radio;
 		area=p*radio*radio;
-		JOptionPane.showMessageDialog(null, "perimentro: " + perim + "\narea: " + area);
 		
-
+		JOptionPane.showMessageDialog(null, "perimentro: " + perim + "\narea: " + area);
 	}
-
 }
