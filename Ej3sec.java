@@ -11,8 +11,7 @@ class Ej3sec {
 		precio=Double.parseDouble(JOptionPane.showInputDialog("Ingrese precio"));
 		cant=Integer.parseInt(JOptionPane.showInputDialog("ingrese cantidad"));
 		total=precio*cant;
+		
 		JOptionPane.showMessageDialog(null, "paga: " + total);
-
 	}
-
 }
