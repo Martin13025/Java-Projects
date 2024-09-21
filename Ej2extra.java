@@ -13,10 +13,7 @@ class Ej2extra {
 		aa=Integer.parseInt(JOptionPane.showInputDialog("ingrese ano actual"));	
 		edad=aa-anac;
 		edf=2050-anac;
+		
 		JOptionPane.showMessageDialog(null, nom + " su edad es: " + edad + "\nen el 2050: " + edf);
-		
-		
-
 	}
-
 }
