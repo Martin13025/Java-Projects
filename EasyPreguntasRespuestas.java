@@ -40,7 +40,6 @@ public class JuegoPreguntasRespuestas {
                 JOptionPane.showMessageDialog(null, respincorrecta);
             }
         }
-
         JOptionPane.showMessageDialog(null, "Respuestas Correctas: " + cant);
     }
 }
