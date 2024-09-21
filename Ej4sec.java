@@ -14,8 +14,5 @@ class Ej4sec {
 		mat=Integer.parseInt(JOptionPane.showInputDialog("ingrese matricula"));
 		prom=(n1+n2+n3)/3;
 		JOptionPane.showMessageDialog(null, "matricula: " + mat + "\npromedio: " + prom);
-		
-
 	}
-
 }
