@@ -13,12 +13,9 @@ class Ej1extra {
 		os=sb*0.07;
 		jub=sb*0.10;
 		sn=sb-os-jub;
+		
 		JOptionPane.showMessageDialog(null, "***** Recibo de sueldo ****** \nsueldo bruto:"
 		+ sb + "\ndescuento obra social: " + os + "\ndescuento jubilacion: " + jub
 		+ "\nsueldo neto a cobrar: " + sn);
-		
-
-
 	}
-
 }
