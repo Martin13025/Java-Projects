@@ -26,7 +26,6 @@ public class juegozodiac {
     }
 
     public static boolean esNumeroValido(String str) {
-        // Проверяем, что строка не пуста и состоит только из цифр
         if (str == null || str.isEmpty()) {
             return false;
         }
