@@ -6,7 +6,7 @@ public class juegozodiac {
         String diaStr = JOptionPane.showInputDialog("Ingrese su día de nacimiento (1-31):");
         String mesStr = JOptionPane.showInputDialog("Ingrese su mes de nacimiento (1-12):");
 
-        try {
+        if (esNumeroValido(diaStr) && esNumeroValido(mesStr)) {
             int dia = Integer.parseInt(diaStr);
             int mes = Integer.parseInt(mesStr);
 
@@ -20,9 +20,22 @@ public class juegozodiac {
             } else {
                 JOptionPane.showMessageDialog(null, "Fecha incorrecta. Por favor, inténtalo de nuevo.", "Error", JOptionPane.ERROR_MESSAGE);
             }
-        } catch (NumberFormatException e) {
+        } else {
             JOptionPane.showMessageDialog(null, "Por favor, ingresa números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
         }
+    }
+
+    public static boolean esNumeroValido(String str) {
+        // Проверяем, что строка не пуста и состоит только из цифр
+        if (str == null || str.isEmpty()) {
+            return false;
+        }
+        for (char c : str.toCharArray()) {
+            if (!Character.isDigit(c)) {
+                return false;
+            }
+        }
+        return true;
     }
 
     public static boolean esFechaValida(int dia, int mes) {
@@ -57,23 +70,24 @@ public class juegozodiac {
     }
 
     public static String obtenerCaracteristicas(String signo) {
-        if (signo.equals("acuario")) return "Interesante, original, independiente.";
-        if (signo.equals("pisces")) return "Sensitivo, intuitivo, soñador."; 
-        if (signo.equals("aries")) return "Dinámico, seguro, decidido.";
-        if (signo.equals("tauro")) return "Práctico, confiable, estable.";
-        if (signo.equals("géminis")) return "Comunicativo, adaptable, curioso.";
-        if (signo.equals("cáncer")) return "Emocional, cariñoso, protector.";
-        if (signo.equals("leo")) return "Seguro, generoso, carismático.";
-        if (signo.equals("virgo")) return "Analítico, práctico, detallista.";
-        if (signo.equals("libra")) return "Diplomático, equilibrado, social.";
-        if (signo.equals("escorpión")) return "Apasionado, decidido, perceptivo.";
-        if (signo.equals("sagitario")) return "Optimista, independiente, filosófico.";
-        if (signo.equals("capricornio")) return "Disciplinado, responsable, ambicioso.";
-        return "Signo desconocido.";
+        return switch (signo) {
+            case "acuario" -> "Interesante, original, independiente.";
+            case "pisces" -> "Sensitivo, intuitivo, soñador.";
+            case "aries" -> "Dinámico, seguro, decidido.";
+            case "tauro" -> "Práctico, confiable, estable.";
+            case "géminis" -> "Comunicativo, adaptable, curioso.";
+            case "cáncer" -> "Emocional, cariñoso, protector.";
+            case "leo" -> "Seguro, generoso, carismático.";
+            case "virgo" -> "Analítico, práctico, detallista.";
+            case "libra" -> "Diplomático, equilibrado, social.";
+            case "escorpión" -> "Apasionado, decidido, perceptivo.";
+            case "sagitario" -> "Optimista, independiente, filosófico.";
+            case "capricornio" -> "Disciplinado, responsable, ambicioso.";
+            default -> "Signo desconocido.";
+        };
     }
 
     public static ImageIcon obtenerIcono(String signo) {
-        
         String pngPath = "/img/" + signo.toLowerCase() + ".png";
         URL pngResource = juegozodiac.class.getResource(pngPath);
 
@@ -81,7 +95,6 @@ public class juegozodiac {
             return new ImageIcon(pngResource);
         }
 
-        
         String jpgPath = "/img/" + signo.toLowerCase() + ".jpg";
         URL jpgResource = juegozodiac.class.getResource(jpgPath);
 
@@ -89,7 +102,6 @@ public class juegozodiac {
             return new ImageIcon(jpgResource);
         }
 
-        
         System.err.println("Error: recurso no encontrado para " + signo);
         return null;
     }
