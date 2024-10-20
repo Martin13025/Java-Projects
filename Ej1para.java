@@ -14,7 +14,6 @@ class Ej1para {
 				}
 			}
 			JOptionPane.showMessageDialog(null, "cant ceros " + cant);
-			
 		}
 
 	}
