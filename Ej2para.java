@@ -21,8 +21,7 @@ class Ej2para {
 				c4++;
 			}
 		}
-		JOptionPane.showMessageDialog(null, "cant <25: " + c1 + " <50" + c2 + "<75" + c3 + "<100" + c4);
-			
+		JOptionPane.showMessageDialog(null, "cant <25: " + c1 + " <50" + c2 + "<75" + c3 + "<100" + c4);	
 	}
 
 }
