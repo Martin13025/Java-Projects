@@ -14,7 +14,7 @@ class Promedios {
 			JOptionPane.showMessageDialog(null, "promedio: " + p);
 			System.out.println("promedio: " + p);
 			if (p >= 4) {
-				ca++;
+			   ca++;
 			}
 			JOptionPane.showMessageDialog(null, "cant aprobados " + ca);
 	}
