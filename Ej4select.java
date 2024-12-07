@@ -14,7 +14,5 @@ class Ej4select {
 		}
 		
 		JOptionPane.showMessageDialog(null, "suma: " + tot);
-
 	}
-
 }
