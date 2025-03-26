@@ -1,17 +1,7 @@
-package edad;
+let edad = prompt("Ingrese edad");
 
-class Edad {
-
-	public static void main(String[] args) {
-		int edad;
-		
-		edad=Integer.parseInt(JOptionPane.showInputDialog("ingrese edad"));
-		
-		if (edad>=21) {
-			JOptionPane
-		} else {
-
-		}
-	}
-
-}
+     if (edad >= 21) {
+        alert("su edad es mayor que 21");
+     } else {
+        alert("su edad es menor que 21");
+     }
