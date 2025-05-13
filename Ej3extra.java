@@ -1,17 +1,12 @@
-package ej3extra;
+let radio;
+let perim;
+let area;
 
-import javax.swing.JOptionPane;
+const p = 3.1416;
 
-class Ej3extra {
 
-	public static void main(String[] args) {
-		double radio, perim, area;
-		final double p=3.1416;
-		
-		radio=Double.parseDouble(JOptionPane.showInputDialog("Ingrese radio"));
-		perim=2*p*radio;
-		area=p*radio*radio;
-		
-		JOptionPane.showMessageDialog(null, "perimentro: " + perim + "\narea: " + area);
-	}
-}
+radio = parseFloat(prompt("Ingrese radio: "));
+perim = 2 * p * radio;
+area = p * (radio * radio);
+
+alert("El perimentro es: " + perim + "\nEl area es: " + area);
