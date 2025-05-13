@@ -1,20 +1,13 @@
-package idioma;
+let id = Math.floor(Math.random() * 3);
 
-import javax.swing.JOptionPane;
-
-class Idioma {
-
-	public static void main(String[] args) {
-		int id;
-		id=(int)(Math.random()*3);
-		if (id==0) {
-			JOptionPane.showMessageDialog(null, "hola");
-		} else {
-			if (id == 1) {
-				JOptionPane.showMessageDialog(null, "hello");
-			} else {
-				JOptionPane.showMessageDialog(null, "bonjour");
-			}
-		}
-	}
+switch (id) {
+    case 0:
+        alert("Hola");
+        break;
+    case 1:
+        alert("Hello");
+        break;
+    case 2:
+        alert("Bonjour");
+        break;
 }
