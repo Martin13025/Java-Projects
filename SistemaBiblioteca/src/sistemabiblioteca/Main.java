@@ -59,3 +59,47 @@ public class Main {
         System.out.println("Intento de préstamo: " + (intentoPrestamo ? "Exitoso" : "Fallido"));
     }
 }
+/* RESUMEN DEL MAIN / RESULT FROM MAIN
+---- Intentando prestar copias ----
+No se puede prestar más de 3 libros.
+
+El lector no puede tener más de 3 libros en préstamo.
+
+---- Estado del lector ----
+
+Lector: Juan Pérez, DNI: 12345678, Bloqueado: false, Libros prestados: 3
+
+---- Copias prestadas al lector ----
+
+Copia ID: 1, Estado: Prestada, Fecha Préstamo: 2025-07-03, Libro: [Cien años de soledad (Novela), Editorial: Sudamericana, Año: 1967, Autor: Gabriel García Márquez (Colombiano) - Nacido el: 1927]
+
+Copia ID: 2, Estado: Prestada, Fecha Préstamo: 2025-07-03, Libro: [Veinte poemas de amor (Poesía), Editorial: Desconocida, Año: Desconocida, Autor: Pablo Neruda (Chileno) - Nacido el: Desconocida]
+
+Copia ID: 3, Estado: Prestada, Fecha Préstamo: 2025-07-03, Libro: [Veinte poemas de amor (Poesía), Editorial: Desconocida, Año: Desconocida, Autor: Pablo Neruda (Chileno) - Nacido el: Desconocida]
+
+---- Simulando que la copia con ID=1 fue prestada hace 40 días (vencida) ----
+
+¿Tiene multa? true
+
+¿Está bloqueado? false
+
+---- Intentando prestar una copia nueva mientras hay multa ----
+
+No se puede prestar, lector bloqueado por multa.
+
+Intento de préstamo: Fallido
+
+---- Devolviendo la copia vencida con ID=1 ----
+
+---- Estado después de devolver la copia vencida ----
+
+Lector: Juan Pérez, DNI: 12345678, Bloqueado: false, Libros prestados: 2
+
+Copia ID: 2, Estado: Prestada, Fecha Préstamo: 2025-07-03, Libro: [Veinte poemas de amor (Poesía), Editorial: Desconocida, Año: Desconocida, Autor: Pablo Neruda (Chileno) - Nacido el: Desconocida]
+
+Copia ID: 3, Estado: Prestada, Fecha Préstamo: 2025-07-03, Libro: [Veinte poemas de amor (Poesía), Editorial: Desconocida, Año: Desconocida, Autor: Pablo Neruda (Chileno) - Nacido el: Desconocida]
+
+---- Intentando prestar la copia con ID=4 nuevamente ----
+
+Intento de préstamo: Exitoso
+*/
