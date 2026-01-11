@@ -1,2 +1,3 @@
 # Java-Projects
-Some Java Projects Trainers 
+Experimental repository for translating Java code blocks into JavaScript.
+Focus on understanding language paradigms, type systems, and runtime differences.
